@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout.app')
 @section('page-title', 'DC Comics')
 
 @section('content')
@@ -13,7 +13,7 @@
 
             @foreach($comicard as $key => $comicardsingle)
 
-            <div class="col-2"><a href="#" class="es_cardlink">
+            <div class="col-2"><a href="{{ route('singlecomic', ['id' => $comicardsingle['title']]) }}" class="es_cardlink">
                 <div class="card h-100 border-0 es_card">
                     <img src="{{ $comicardsingle['thumb'] }}" class="card-img-top" alt="{{ $comicardsingle['title'] }}">
                     <div class="card-body px-0">

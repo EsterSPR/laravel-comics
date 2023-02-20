@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('comics', compact('comicard'));
 }) ->name('comicard');
 
-Route::get('/comic/{title}', function($titolo){
+Route::get('/comic/{title}', function($title){
     $comics = config('comics');
 
     foreach($comics as $comic){
