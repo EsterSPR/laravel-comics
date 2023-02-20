@@ -17,3 +17,16 @@ Route::get('/', function () {
     $comicard = config('comics');
     return view('comics', compact('comicard'));
 }) ->name('comicard');
+
+Route::get('/comic/{title}', function($titolo){
+    $comics = config('comics');
+
+    foreach($comics as $comic){
+        if($comic['title'] == $title){
+            $single = $comic;
+        }
+    }
+
+    return view('singlecomic', compact('single'));
+
+}) ->name('singlecomic');
