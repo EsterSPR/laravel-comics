@@ -279,11 +279,11 @@ img[alt="dc-logo"]{
 
 .es_comicpage h2, .es_comicpage h3{
     color: #003F5E;
+    font-weight: 700;
 }
 
 .es_comicpage h2{
     text-transform: uppercase;
-    font-weight: 700;
 }
 
 .es_comicpage p{
@@ -294,4 +294,12 @@ img[alt="dc-logo"]{
     width: 300px;
     height: 250px;
     background-image: url('/resources/img/adv.jpg');
+}
+
+.es_comicgrey{
+    font-weight: 400;
+}
+
+.es_bluetitle{
+    color: #003F5E;
 }

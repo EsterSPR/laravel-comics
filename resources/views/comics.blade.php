@@ -11,13 +11,13 @@
 
         <h2 class="current-series">CURRENT SERIES</h2>
 
-            @foreach($comicard as $key => $comicardsingle)
+            @foreach($comics as $key => $comic)
 
-            <div class="col-2"><a href="{{ route('singlecomic', ['id' => $comicardsingle['title']]) }}" class="es_cardlink">
+            <div class="col-2"><a href="{{ route('singlecomic', ['id' => $comic['title']]) }}" class="es_cardlink">
                 <div class="card h-100 border-0 es_card">
-                    <img src="{{ $comicardsingle['thumb'] }}" class="card-img-top" alt="{{ $comicardsingle['title'] }}">
+                    <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="{{ $comic['title'] }}">
                     <div class="card-body px-0">
-                        <h6 class="card-title">{{ $comicardsingle['title'] }}</h6>
+                        <h6 class="card-title">{{ $comic['title'] }}</h6>
                     </div>
                 </div>
             </a></div>

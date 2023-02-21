@@ -20,7 +20,7 @@
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link es_menu {{ Route::currentRouteName() == 'comicard' ? 'es_activemenu' : '' }}" href="#">COMICS</a>
+                <a class="nav-link es_menu {{ Route::currentRouteName() == 'comics' ? 'es_activemenu' : '' }}" href="{{ route('comics') }}">COMICS</a>
                 </li>
 
                 <li class="nav-item">

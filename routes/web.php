@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comicard = config('comics');
-    return view('comics', compact('comicard'));
-}) ->name('comicard');
+    $comics = config('comics');
+    return view('comics', compact('comics'));
+}) ->name('comics');
 
-Route::get('/comic/{title}', function($title){
+Route::get('/comic/{id}', function($id){
     $comics = config('comics');
 
     foreach($comics as $comic){
-        if($comic['title'] == $title){
+        if($comic['title'] == $id){
             $single = $comic;
         }
     }
